@@ -1,0 +1,47 @@
+
+
+header {
+    display: flex;
+    height: 12.5em;
+    width: 100vw;
+    background-color: #0D0D0D;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    height:3em;
+    width: 7.8em;
+}
+
+.flexbox{
+    background-color: #1A1A1A;
+    width: 100vw;
+    min-height: calc(100vh - 12.5em);
+}
+
+.box_tasks{
+    border: 1px solid black;
+    width: 800px;
+    height: 18.18em;
+    justify-content: space-between;
+    margin: 0 auto;
+    border: none;
+}
+
+
+
+.box_tasks_empty{
+    border-top: 1px solid #333333;
+}
+
+.box_tasks_empty{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    padding-top: 64px;
+    
+}
+

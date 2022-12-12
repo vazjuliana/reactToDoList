@@ -1,0 +1,68 @@
+.tasksToDo{
+    width: 50rem;
+    height: 4.5rem;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 1rem;
+    background-color: #333333;
+    border-radius: 8px;
+    align-items: center;
+   
+}
+
+.tasksToDo + .tasksToDo {
+     margin-top: 0.75rem;
+}
+
+.inputP{
+    display: flex; 
+    gap: 0.75rem;
+    align-items: center;
+}
+
+.checkbox{
+    border: 2px solid #4EA8DE;
+    border-radius: 50%;
+    cursor: pointer;
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+    position: abolute;
+}
+
+.checkbox:checked{
+    background-color: #5E60CE;
+    border: hidden;
+    border-radius: 50%;
+    cursor: pointer;
+    appearance: none;
+    height: 1rem;
+    width: 1rem;
+}
+
+.checkIcon{
+   position: relative;
+   left: -26px;
+}
+
+.task{
+    color: #F2F2F2;
+    font-size: 1rem;
+    cursor: pointer;
+    
+}
+
+.trash{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.trashIcon:hover{
+    color: #5E60CE;
+}
+
+.trashIcon{
+    color: #808080;
+}

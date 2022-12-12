@@ -1,0 +1,24 @@
+.box_tasks_counter{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3em;
+    padding-bottom: 14px;
+}
+
+.box_tasks_counter_button{
+    color: #D9D9D9;
+    background-color: #333333;
+    padding: 4px 10px;
+    margin: 10px 8px;
+    border-radius: 100%;
+    border: none;
+}
+
+.box_tasks_counter_p{
+    color: #4EA8DE;
+}
+
+
+.box_tasks_counter_pp{
+    color: #8284FA;
+}
