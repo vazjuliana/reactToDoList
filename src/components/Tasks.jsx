@@ -10,8 +10,9 @@ export function Tasks(props){
     const newTaskToDo = event.target.newTask.value
 
     props.set([...props.tasks, newTaskToDo])
-  }
 
+    event.target.newTask.value = ''
+  }
 
 
   return(

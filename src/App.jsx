@@ -10,12 +10,19 @@ import { Counter } from './components/Counter';
 import { EmptySpace } from './components/EmptySpace';
 import { TasksToDo } from './components/TasksToDo';
 
-export function App() {
+export function App(props) {
 
-  const [tasks, setTasks] = useState([
-   
-  ])
+  const [tasks, setTasks] = useState([])
   
+  function deleteTask(taskToDelete){
+    const tasksWithoutDeletedOne = tasks.filter(task => {
+      return task != taskToDelete
+    })
+   setTasks(tasksWithoutDeletedOne)
+  }
+
+  const [completedTasks, setCompletedTasks] = useState(0)
+
   return (
     <>
       <header>
@@ -27,17 +34,14 @@ export function App() {
           set = {setTasks}
         />
         <div className='box_tasks'>
-          <Counter />
+          <Counter tasks={tasks} completedTasks={completedTasks}/>
           <div className='box_tasks_empty'>
             {tasks.length < 1 ? 
             <EmptySpace /> : 
              tasks.map(task =>{
-              return <TasksToDo task={task}/>
+              return <TasksToDo key={task} task={task} OnDeleteTask={deleteTask} setCompletedTasks={setCompletedTasks} completedTasks={completedTasks}/>
             })
-          }
-            
-           
-            
+          }   
           </div>
         </div>        
       </div>     
